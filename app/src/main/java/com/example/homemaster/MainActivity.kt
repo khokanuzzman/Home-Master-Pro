@@ -18,9 +18,10 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            HomeMasterAndroidTheme {
+            HomeMasterAndroidTheme(darkTheme = false) {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     HomeScreen(modifier = Modifier.padding(innerPadding))
+//                    AddExpanse(modifier = Modifier.padding(innerPadding))
                 }
             }
         }
